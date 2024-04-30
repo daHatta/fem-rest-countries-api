@@ -7,6 +7,13 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      "sm": "375px",
+      "md": "750px",
+      "lg": "1024px",
+      "xl": "1280px",
+      "2xl": "1440px",
+    },
     colors: {
       clrBkgd: "hsl(var(--clr-background) / <alpha-value>)",
       clrInpt: "hsl(var(--clr-input) / <alpha-value>)",

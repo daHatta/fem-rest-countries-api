@@ -11,8 +11,8 @@
     --clr-text: 200deg 15% 8%;
     --clr-elements: 0deg 0% 100%;
   
-    --text-home: .875rem; /* 14px */
-    --text-detail: 1rem;  /* 16px */
+    --fs-home: .875rem; /* 14px */
+    --fs-detail: 1rem;  /* 16px */
   }
   
   @media (prefers-color-scheme: dark) {
@@ -31,6 +31,14 @@
     --clr-input: 0deg 0% 100%;
     --clr-text: 0deg 0% 100%;
     --clr-elements: 209deg 23% 22%;
+  }
+
+  body {
+    position: relative;
+    overflow: hidden;
+    font-size: var(--fs-home);
+    min-height: 100vh;
+    min-height: 100dvh;
   }
 
 }

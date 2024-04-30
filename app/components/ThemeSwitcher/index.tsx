@@ -29,7 +29,7 @@ const ThemeSwitcher = () => {
       if (resolvedTheme === "dark") {
         return (
           <button
-            className="w-[20px] 2xl:w-[25px] 2xl:pt-[4px]"
+            className="flex justify-center items-center gap-x-[10px]"
             onClick={() => setTheme("light")}
           >
             <PiMoonFill />
@@ -41,7 +41,7 @@ const ThemeSwitcher = () => {
       if (resolvedTheme === "light") {
         return (
           <button
-            className="w-[20px] 2xl:w-[25px] 2xl:pt-[4px]"
+            className="flex justify-center items-center gap-x-[10px]"
             onClick={() => setTheme("dark")}
           >
             <PiMoon />
