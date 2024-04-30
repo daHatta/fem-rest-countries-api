@@ -7,14 +7,19 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
+    colors: {
+      clrBkgd: "hsl(var(--clr-background) / <alpha-value>)",
+      clrInpt: "hsl(var(--clr-input) / <alpha-value>)",
+      clrText: "hsl(var(--clr-text) / <alpha-value>)",
+      clrElmt: "hsl(var(--clr-elements) / <alpha-value>)",
+    },
+    fontWeight: {
+      light: "300",
+      semibold: "600",
+      extrabold: "800",
     },
   },
   plugins: [],
+  darkMode: ["selector", "[data-theme='dark']"],
 };
 export default config;

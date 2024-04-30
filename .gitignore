@@ -19,6 +19,9 @@
 # misc
 .DS_Store
 *.pem
+*.sketch
+*.xd
+*.fig
 
 # debug
 npm-debug.log*
@@ -34,3 +37,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# adds
+/design
+info.txt
+style-guide.md
+README-info.md
+README.md

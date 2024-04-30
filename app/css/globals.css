@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+  :root {
+    /* Light Mode Colors */
+    --clr-background: 0deg 0% 98%;
+    --clr-input: 0deg 0% 52%;
+    --clr-text: 200deg 15% 8%;
+    --clr-elements: 0deg 0% 100%;
+  
+    --text-home: .875rem; /* 14px */
+    --text-detail: 1rem;  /* 16px */
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    :root {
+      /* Dark Mode Colors */
+      --clr-background: 207deg 26% 17%;
+      --clr-input: 0deg 0% 100%;
+      --clr-text: 0deg 0% 100%;
+      --clr-elements: 209deg 23% 22%;
+    }
+  }
+
+  :root[data-theme="dark"] {
+    /* Dark Mode Colors */
+    --clr-background: 207deg 26% 17%;
+    --clr-input: 0deg 0% 100%;
+    --clr-text: 0deg 0% 100%;
+    --clr-elements: 209deg 23% 22%;
+  }
+
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
