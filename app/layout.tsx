@@ -16,6 +16,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <link
+        rel="icon"
+        href="./favicon-32x32.png"
+        type="image/png"
+        sizes="32x32"
+      />
       <body className={`${nunito_sans.className} bg-clrBkgd/100`}>
         <ThemeProvider
           attribute="data-theme"
